@@ -31,7 +31,6 @@ function App() {
         href: "www.google.com"
       }, "school4u")} */}
       
-      
     </>
   )
 }
