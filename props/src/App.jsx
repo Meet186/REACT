@@ -4,7 +4,6 @@ import users  from './data.json'
 import Button from './components/Button';
 import Layout from './assets/Layout';
 function App() {
-
   function changeBg(){
     document.body.style.background = 'red';
   }
@@ -20,8 +19,6 @@ function App() {
 
           {/* <Button text="Add Colour" func={changeBg}/>
           <Button text="Remove Colour" func={removeBg}/> */}
-
-            l
               {/* <Layout>
                 <h1>my name is meet</h1>
                 <p>Lorem ipsum dolor sit amet.</p>
