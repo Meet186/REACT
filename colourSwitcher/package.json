@@ -11,8 +11,13 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.15",
+    "chrome-launcher": "^1.2.1",
+    "fs": "^0.0.1-security",
+    "lighthouse": "^12.8.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "serve": "^14.2.5",
+    "source-map": "^0.7.6",
     "tailwindcss": "^4.1.15"
   },
   "devDependencies": {
