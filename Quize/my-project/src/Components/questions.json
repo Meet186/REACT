@@ -1,0 +1,232 @@
+[
+  {
+    "question": "Which language runs in a web browser ?",
+    "options": ["Java", "C", "Python", "JavaScript"],
+    "answer": "JavaScript"
+  },
+  {
+    "question": "Which of the following is a Java keyword ?",
+    "options": ["delete", "var", "static", "define"],
+    "answer": "static"
+  },  {
+    "question": "Which data structure uses FIFO ?",
+    "options": ["Stack", "Queue", "Tree", "Graph"],
+    "answer": "Queue"
+  },
+  {
+    "question": "Which symbol is used for comments in Java ?",
+    "options": ["//", "#", "<!-- -->", "**"],
+    "answer": "//"
+  },
+  {
+    "question": "Which HTML tag is used to create a hyperlink ?",
+    "options": ["<link>", "<a>", "<href>", "<url>"],
+    "answer": "<a>"
+  },
+  {
+    "question": "Which company developed Java ?",
+    "options": ["Google", "Microsoft", "Sun Microsystems", "Apple"],
+    "answer": "Sun Microsystems"
+  },
+  {
+    "question": "Which operator is used to compare both value and type in JavaScript ?",
+    "options": ["==", "!=", "===", "="],
+    "answer": "==="
+  },
+  {
+    "question": "Which data type is NOT primitive in Java ?",
+    "options": ["int", "float", "String", "char"],
+    "answer": "String"
+  },
+  {
+    "question": "Which sorting algorithm has O(n log n) average time complexity ?",
+    "options": ["Bubble Sort", "Insertion Sort", "Merge Sort", "Selection Sort"],
+    "answer": "Merge Sort"
+  },
+  {
+    "question": "Which keyword is used to inherit a class in Java ?",
+    "options": ["this", "super", "extends", "implements"],
+    "answer": "extends"
+  },
+  {
+    "question": "Which HTML attribute is used to define inline styles ?",
+    "options": ["style", "class", "font", "css"],
+    "answer": "style"
+  },
+  {
+    "question": "Which data structure is used in recursion ?",
+    "options": ["Queue", "Stack", "Array", "Linked List"],
+    "answer": "Stack"
+  },
+  {
+    "question": "Which CSS property controls text size ?",
+    "options": ["font-style", "text-size", "font-size", "text-style"],
+    "answer": "font-size"
+  },
+  {
+    "question": "Which loop is guaranteed to execute at least once ?",
+    "options": ["for", "while", "do-while", "foreach"],
+    "answer": "do-while"
+  },
+  {
+    "question": "Which of the following is NOT an OOP concept ?",
+    "options": ["Encapsulation", "Inheritance", "Compilation", "Polymorphism"],
+    "answer": "Compilation"
+  },
+  {
+    "question": "Which method is the entry point of Java program ?",
+    "options": ["start()", "main()", "run()", "init()"],
+    "answer": "main()"
+  },
+  {
+    "question": "Which data structure allows random access ?",
+    "options": ["Array", "Stack", "Queue", "Linked List"],
+    "answer": "Array"
+  },
+  {
+    "question": "Which HTML tag is used for unordered list ?",
+    "options": ["<ol>", "<li>", "<ul>", "<list>"],
+    "answer": "<ul>"
+  },
+  {
+    "question": "Which JavaScript function converts JSON to object ?",
+    "options": ["JSON.parse()", "JSON.stringify()", "parseJSON()", "convertJSON()"],
+    "answer": "JSON.parse()"
+  },
+  {
+    "question": "Which access modifier makes variables accessible only within class ?",
+    "options": ["public", "protected", "default", "private"],
+    "answer": "private"
+  },
+  {
+    "question": "Which sorting algorithm is the fastest in best case ?",
+    "options": ["Bubble Sort", "Quick Sort", "Merge Sort", "Heap Sort"],
+    "answer": "Bubble Sort"
+  },
+  {
+    "question": "Which keyword is used to create object in Java ?",
+    "options": ["class", "object", "new", "create"],
+    "answer": "new"
+  },
+  {
+    "question": "Which HTML tag is used to display images ?",
+    "options": ["<img>", "<image>", "<pic>", "<src>"],
+    "answer": "<img>"
+  },
+  {
+    "question": "Which traversal is used in BFS ?",
+    "options": ["Stack", "Queue", "Recursion", "Heap"],
+    "answer": "Queue"
+  },
+  {
+    "question": "Which Java collection does NOT allow duplicates ?",
+    "options": ["List", "Set", "ArrayList", "LinkedList"],
+    "answer": "Set"
+  },
+  {
+    "question": "Which CSS property is used to change text color ?",
+    "options": ["font-color", "text-color", "color", "bgcolor"],
+    "answer": "color"
+  },
+  {
+    "question": "Which algorithm is used to find shortest path ?",
+    "options": ["DFS", "BFS", "Dijkstra", "Binary Search"],
+    "answer": "Dijkstra"
+  },
+  {
+    "question": "Which JavaScript keyword declares a constant ?",
+    "options": ["var", "let", "const", "static"],
+    "answer": "const"
+  },
+  {
+    "question": "Which data structure is used in DFS ?",
+    "options": ["Queue", "Stack", "Heap", "Array"],
+    "answer": "Stack"
+  },
+  {
+    "question": "Which HTML tag defines table row ?",
+    "options": ["<td>", "<th>", "<tr>", "<table>"],
+    "answer": "<tr>"
+  },
+  {
+    "question": "Which time complexity represents binary search ?",
+    "options": ["O(n)", "O(n²)", "O(log n)", "O(1)"],
+    "answer": "O(log n)"
+  },
+  {
+    "question": "Which Java keyword prevents method overriding ?",
+    "options": ["static", "final", "abstract", "private"],
+    "answer": "final"
+  },
+  {
+    "question": "Which data structure is linear ?",
+    "options": ["Graph", "Tree", "Array", "Heap"],
+    "answer": "Array"
+  },
+  {
+    "question": "Which HTML tag is used for input field ?",
+    "options": ["<form>", "<input>", "<textbox>", "<field>"],
+    "answer": "<input>"
+  },
+  {
+    "question": "Which JavaScript method adds element at end of array ?",
+    "options": ["push()", "pop()", "shift()", "unshift()"],
+    "answer": "push()"
+  },
+  {
+    "question": "Which sorting algorithm uses divide and conquer ?",
+    "options": ["Bubble Sort", "Insertion Sort", "Merge Sort", "Selection Sort"],
+    "answer": "Merge Sort"
+  },
+  {
+    "question": "Which Java keyword is used for abstraction ?",
+    "options": ["interface", "class", "object", "this"],
+    "answer": "interface"
+  },
+  {
+    "question": "Which HTML tag is used for bold text ?",
+    "options": ["<b>", "<strong>", "<bold>", "<text>"],
+    "answer": "<b>"
+  },
+  {
+    "question": "Which data structure is non-linear ?",
+    "options": ["Array", "Linked List", "Tree", "Stack"],
+    "answer": "Tree"
+  },
+  {
+    "question": "Which CSS property is used to center text ?",
+    "options": ["align", "text-align", "center", "float"],
+    "answer": "text-align"
+  },
+  {
+    "question": "Which Java method is used to find string length ?",
+    "options": ["length()", "size()", "count()", "getLength()"],
+    "answer": "length()"
+  },
+  {
+    "question": "Which algorithm checks cycle in graph ?",
+    "options": ["Binary Search", "DFS", "Linear Search", "Merge Sort"],
+    "answer": "DFS"
+  },
+  {
+    "question": "Which JavaScript keyword is used to declare variable (block scope) ?",
+    "options": ["var", "let", "const", "static"],
+    "answer": "let"
+  },
+  {
+    "question": "Which HTML tag is used to create checkbox ?",
+    "options": ["<check>", "<input>", "<box>", "<checkbox>"],
+    "answer": "<input>"
+  },
+  {
+    "question": "Which data structure follows LIFO ?",
+    "options": ["Queue", "Stack", "Array", "Tree"],
+    "answer": "Stack"
+  },
+  {
+    "question": "Which Java package contains Scanner class ?",
+    "options": ["java.io", "java.util", "java.lang", "java.net"],
+    "answer": "java.util"
+  }
+
+]

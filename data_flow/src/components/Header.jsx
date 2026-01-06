@@ -8,7 +8,6 @@ const header = (props) => {
   }
 
   return (
-   
     <div>
       <h1 onClick={passData} className='bg-amber-300 p-20'>Header</h1>
     </div>
