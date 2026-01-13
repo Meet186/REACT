@@ -5,7 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
    server: {
-    historyApiFallback: true,  // 👈 This ensures SPA routing works during dev
+    historyApiFallback: true, 
+     base: '/REACT/',   //   
   },
   preview: {
     historyApiFallback: true,  // 👈 For `vite preview`

@@ -4,7 +4,7 @@ import Questions from './Components/Questions'
 import Timer from './Components/Timer'
 import Result from './Components/Result'
 function App() {
-  const [hasStarted, setHasStarted] = useState(false)
+  const [hasStarted,setHasStarted] = useState(false)
   const [isOver, setisOver] = useState(false)
   const [score, setScore] = useState(0)
   const handleStart = () => {

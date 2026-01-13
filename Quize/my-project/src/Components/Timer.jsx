@@ -14,7 +14,7 @@ const Timer = ({ setisOver }) => {
         return prev - 1
       })
     }, 1000)
-
+    
     return () => clearInterval(intervalID)
   }, [setisOver])
 
