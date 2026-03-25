@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+
+.page {
+  background: #695a90;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aa3bff;
+  font-weight: 600;
+}
+
+a:hover{
+  color: tomato;
+  transition: all ease-out 0.5s;
+}
+
