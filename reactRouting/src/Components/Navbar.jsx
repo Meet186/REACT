@@ -20,7 +20,6 @@ const Navbar = () => {
                     )
                 })}
             </div>
-
             <button onClick={handleClick} className='w-25 h-[50px] bg-blue-300 rounded-xl'>Navigate to help</button>
         </>
     )
