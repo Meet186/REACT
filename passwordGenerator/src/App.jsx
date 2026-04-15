@@ -68,8 +68,6 @@ function App() {
           Character Allowed
         </label>
 
-
-
         <button className='bg-blue-500 px-3 py-2 rounded-lg cursor-pointer'
         onClick={copyPassword}
         >Copy Password</button>

@@ -4,12 +4,16 @@ import { useNewsContext } from '../../Context/NewsContext'
 import Loader from '../Components/Loader'
 const News = ({ className }) => {
 
+
+
     const { news, setNews, fetchNews, loading } = useNewsContext();
 
     // load data first time
     useEffect(() => {
         (async () => {
             const data = await fetchNews();
+            console.log(data);
+
             setNews(data.articles)
         })()
     }, [])
@@ -48,6 +52,9 @@ const NewsCard = ({ details }) => {
 
             <div className="card-body flex flex-col flex-grow">
 
+                <p className="line-clamp-3 flex-grow">
+                    {new Date(details.publishedAt).toLocaleDateString()}
+                </p>
                 <h2 className="card-title line-clamp-2">{details.title}</h2>
 
                 <p className="line-clamp-3 flex-grow">{details.description}</p>
