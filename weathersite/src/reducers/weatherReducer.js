@@ -14,15 +14,15 @@ const initialState = {
 }
 // API -> pending,sucess,error
 export const weatherReducer = (state = initialState,action)=>{
-        if(action.type == FETCH_WEATHER_PENDING){
+        if(action.type === FETCH_WEATHER_PENDING){
             return {...state,loading : true,error : null}
-        } else if (action.type == FETCH_CURRENT_SUCESS){
+        } else if (action.type === FETCH_CURRENT_SUCESS){
             return {...state,laoding : false,current : action.payload}
-        } else if (action.type == FETCH_FORECAST_SUCESS){
+        } else if (action.type === FETCH_FORECAST_SUCESS){
             return {...state,loading : false,forecast : action.payload}
-        } else if (action.type == FETCH_WEATHER_ERROR){
+        } else if (action.type === FETCH_WEATHER_ERROR){
             return {...state,loading : false,error : action.payload}
-        } else if (action.type == FETCH_CITY){
+        } else if (action.type === FETCH_CITY){
             return {...state,loading : false,city : action.payload}
         } else {
             return state;
