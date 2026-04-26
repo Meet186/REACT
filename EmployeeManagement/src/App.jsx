@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -7,9 +7,14 @@ import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
 import EmployeeList from './Components/EmployeeList'
 import DeletePopup from './Components/DeletePopup'
-
+import { useDispatch } from 'react-redux'
+import { getEmployee } from './Store/features/empolyee/employeeThunk'
 function App() {
-  const [count, setCount] = useState(0)
+  const dispatch = useDispatch();
+  useEffect(()=>{
+    dispatch(getEmployee())
+  },[])
+
 
   return (
    <>
