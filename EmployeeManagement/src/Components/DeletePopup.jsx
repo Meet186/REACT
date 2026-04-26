@@ -1,6 +1,8 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { closeDeletePopup } from "../Store/features/popup/popupSlice";
+import { deleteEmployee } from "../Store/features/empolyee/employeeThunk";
+
 
 const DeletePopup = ({ onConfirm }) => {
   const dispatch = useDispatch();
@@ -8,11 +10,16 @@ const DeletePopup = ({ onConfirm }) => {
     (state) => state.popupReducer.deletePopup
   );
 
+  const handleConformation = async () => {
+    await dispatch(deleteEmployee(popup));
+    dispatch(closeDeletePopup());
+  }
+
   if (!popup) return null;
 
   return (
     <div
-      onClick={() => dispatch(closeDeletePopup())} 
+      onClick={() => dispatch(closeDeletePopup())}
       className="fixed inset-0 flex items-center justify-center z-50"
     >
       {/* Overlay */}
@@ -42,11 +49,7 @@ const DeletePopup = ({ onConfirm }) => {
 
           {/* Delete */}
           <button
-            onClick={(e) => {
-              e.stopPropagation(); // ❗ prevent parent click
-              onConfirm?.();
-              dispatch(closeDeletePopup());
-            }}
+            onClick={handleConformation}
             className="px-4 py-2 rounded bg-red-600 hover:bg-red-700"
           >
             Delete

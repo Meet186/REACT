@@ -7,24 +7,25 @@ import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
 import EmployeeList from './Components/EmployeeList'
 import DeletePopup from './Components/DeletePopup'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { getEmployee } from './Store/features/empolyee/employeeThunk'
+import Highlights from './Components/Highlights'
 function App() {
   const dispatch = useDispatch();
+  const showHighlights = useSelector(state => state.popupReducer.showHighlights);
+  
   useEffect(()=>{
     dispatch(getEmployee())
   },[])
-
-
+  
   return (
    <>
      <div className='flex flex-col min-h-screen w-full'>
       <Navbar/>
       <div className='flex-1'>
         <DeletePopup/>
-        <EmployeeList/>
+        {showHighlights ? <Highlights/> : <EmployeeList/>}
       </div>
-
       <Footer/>
      </div>
    </>

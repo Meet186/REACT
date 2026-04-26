@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import { closeDeletePopup, closeEmployeePopup } from '../Store/features/popup/popupSlice';
-import { postEmployee } from '../Store/features/empolyee/employeeThunk';
+import { postEmployee, updateEmployee } from '../Store/features/empolyee/employeeThunk';
 const EmpolyeePopup = () => {
     const popup = useSelector(state => state.popupReducer.empolyeePopup);
+    console.log(popup);
+
     const dispatch = useDispatch();
     const [formDetails, setFormDetails] = useState({
         profileurl: '',
@@ -14,10 +16,36 @@ const EmpolyeePopup = () => {
         highlight: false,
     })
 
+    useEffect(() => {
+        if (!popup) {
+            setFormDetails({
+                profileurl: '',
+                name: '',
+                email: '',
+                bio: '',
+                highlight: false,
+            })
+        }
+        else if (popup.id) {
+            setFormDetails({
+                profileurl: popup.profileurl,
+                name: popup.name,
+                email: popup.email,
+                bio: popup.bio,
+                highlight: false,
+            })
+        }
+    }, [popup])
+
     const handleSumbit = async () => {
-
-
-        await dispatch(postEmployee(formDetails));
+        if(popup.id){
+            await dispatch(updateEmployee({
+                id : popup.id,
+                details : formDetails
+            }))
+        }else {
+            await dispatch(postEmployee(formDetails));
+        }
         dispatch(closeEmployeePopup());
         setFormDetails({
             profileurl: '',
@@ -68,6 +96,7 @@ const EmpolyeePopup = () => {
                             name="profileurl"
                             placeholder="Profile Url"
                             onChange={handleChange}
+                            value={formDetails.profileurl}
                             className="w-full mt-1 p-2 rounded bg-gray-800 border border-gray-700 focus:ring-2 focus:ring-blue-500 outline-none"
                         />
                     </div>
@@ -94,6 +123,7 @@ const EmpolyeePopup = () => {
                             name="email"
                             placeholder="Email"
                             onChange={handleChange}
+                            value={formDetails.email}
                             className="w-full mt-1 p-2 rounded bg-gray-800 border border-gray-700 focus:ring-2 focus:ring-blue-500 outline-none"
                             required
                         />
@@ -106,6 +136,7 @@ const EmpolyeePopup = () => {
                             name="bio"
                             placeholder="Bio"
                             onChange={handleChange}
+                            value={formDetails.bio}
                             rows="3"
                             className="w-full mt-1 p-2 rounded bg-gray-800 border border-gray-700 focus:ring-2 focus:ring-blue-500 outline-none"
                         />

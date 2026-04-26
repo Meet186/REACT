@@ -3,6 +3,7 @@ import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
   empolyeePopup : false,
   deletePopup : false,
+  showHighlights : false,
 }
 
 export const popupSlice = createSlice({
@@ -20,11 +21,14 @@ export const popupSlice = createSlice({
     },
     closeDeletePopup : (state,action)=>{
         state.deletePopup = false;
+    },
+    toggleView : (state) => {
+        state.showHighlights = !state.showHighlights;
     }
   },
 })
 
 // Action creators are generated for each case reducer function
-export const {openEmpolyeePopup,closeEmployeePopup,openDeletePopup,closeDeletePopup } = popupSlice.actions
+export const {openEmpolyeePopup,closeEmployeePopup,openDeletePopup,closeDeletePopup,toggleView } = popupSlice.actions
 
 export default popupSlice.reducer
